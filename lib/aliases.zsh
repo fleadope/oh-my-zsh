@@ -15,7 +15,7 @@ alias sd='ruby script/server --debugger'
 alias devlog='tail -f log/development.log'
 
 # Basic directory operations
-alias .='pwd'
+# alias .='pwd'
 alias ...='cd ../..'
 alias -- -='cd -'
 
