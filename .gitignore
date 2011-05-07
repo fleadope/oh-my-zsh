@@ -4,3 +4,4 @@ projects.zsh
 custom/*
 !custom/example.zsh
 !custom/aliases.zsh
+cache
