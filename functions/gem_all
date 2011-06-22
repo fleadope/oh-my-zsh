@@ -1,0 +1,18 @@
+#!/bin/zsh
+gem_all(){
+  if (( $# == 0 ))
+     then print -n "run a command for all rubies in rvm.\n\nusage: gem_all <command> <gem_name>\n"
+     return 0
+  fi
+  echo "running gem $@ for all rubies..."
+  # for i; do echo $i; done
+  strings=`rvm list strings`
+  rubies=(${(s: :)strings})
+  for r in $rubies; do
+    echo "performing 'gem $1 $2' for $r.."
+    cmd="rvm $r gem $1 $2"
+    echo $cmd
+    `$cmd`
+  done
+  echo "done."
+}

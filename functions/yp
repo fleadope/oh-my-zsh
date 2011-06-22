@@ -1,0 +1,6 @@
+#!/bin/zsh
+yp () {
+       if (( $# == 0 ))
+       then echo usage: yp name ...; fi
+       for i; do ypmatch $i passwd.byname; done
+ }

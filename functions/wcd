@@ -1,0 +1,7 @@
+fpath=($fpath $HOME/.zsh/func)
+typeset -U fpath
+function wcd { 
+  /usr/bin/wcd.exec $* 
+  $HOME/bin/wcd.go 
+}
+
