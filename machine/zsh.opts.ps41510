@@ -1,2 +1,2 @@
-export PATH=/usr/local/rvm/bin:$PATH
+export PATH=~/.rvm/bin:$PATH
 
